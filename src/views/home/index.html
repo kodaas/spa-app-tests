@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><?= title.toUpperCase() ?></title>
+  </head>
+  <body>
+    <? if(!title) { ?>
+    <h1>Express is working</h1>
+    <? }else { ?>
+    <h1>
+      Javascript working from:
+      <?= path ?>
+      <?- include('test.html', {title: 'Testing 123'}) ?>
+      <? console.log('Is Working in Server')?>
+      <span>Hello World</span>
+    </h1>
+    <? } ?>
+    <script>
+      console.log("Script Is Working: Before </body>", "<?= path ?>");
+    </script>
+    <script src="script.js"></script>
+  </body>
+  <script>
+    console.log(
+      "Script Is Working: After </body>",
+      document.querySelector("body")
+    );
+  </script>
+</html>
