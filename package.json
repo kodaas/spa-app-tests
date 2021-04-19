@@ -1,0 +1,26 @@
+{
+  "name": "spa-app",
+  "version": "2.0.0",
+  "description": "",
+  "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodaas/spa-app-tests.git"
+  },
+  "author": "Ajala Fiyinfoluwa John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kodaas/spa-app-tests/issues"
+  },
+  "homepage": "https://github.com/kodaas/spa-app-tests#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
